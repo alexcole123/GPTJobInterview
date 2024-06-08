@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+
+  #React Service:
+  react-service:
+
+    # Image name to create from Dockerfile
+    image: alexjcoleb/job-interview-image:1.0
+
+    # Location of Dockerfile
+    build: .
+
+    # Container name to create
+    container_name: job-interview-container
+
+    # Restart policy
+    restart: unless-stopped
+
+    # Port mapping (host:container)
+    ports:
+      - 80:3000
+
+

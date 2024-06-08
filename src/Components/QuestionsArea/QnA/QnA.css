@@ -1,0 +1,57 @@
+.QnA > form {
+	width: 300px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+    background: white;
+}
+
+/* .QnA label{
+    font-weight: bolder;
+    font-size: large;
+
+} */
+
+.QnA select, .QnA input, .QnA button {
+    width: 100%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: x-large;
+}
+
+.completion {
+    background-color: aliceblue;
+    border: 1px solid;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px;
+}
+
+.completion div > p:first-child {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* .completion div > p:last-child {
+    display: none;
+} */
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.spinner {
+    font-size: 2em;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
